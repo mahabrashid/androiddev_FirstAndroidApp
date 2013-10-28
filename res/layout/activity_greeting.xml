@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="displayConfirmScreen"
+    tools:context=".FirstAppActivity" >
+
+    <TextView
+        android:id="@+id/txtVw_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/txtVwEnterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVw_firstName"
+        android:layout_below="@+id/txtVw_greeting"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/please_enter_your_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtVw_firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="19dp"
+        android:text="@string/first_name_"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/txtFld_FirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVw_firstName"
+        android:layout_alignLeft="@+id/txtFld_lastName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtVwLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVw_firstName"
+        android:layout_below="@+id/txtVw_firstName"
+        android:layout_marginTop="20dp"
+        android:text="@string/last_name_"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/txtFld_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtVwLastName"
+        android:layout_toRightOf="@+id/txtVwLastName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtFld_lastName"
+        android:layout_below="@+id/txtFld_lastName"
+        android:layout_marginTop="20dp"
+        android:text="@string/_submit" />
+
+</RelativeLayout>
